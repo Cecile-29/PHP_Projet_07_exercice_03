@@ -1,3 +1,11 @@
+<?php
+    session_start();
+
+    $_SESSION['prenom'] = 'Ami';
+    $_SESSION['nom'] = 'Kaouet';
+    $_SESSION['age'] = '41';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,14 +23,6 @@
             Au clic sur un lien, affichez l'âge sur une autre page.</h2>
         </div>
         <div class="row border border-primary rounded p-3 m-4 text-secondary justify-content-center">
-            <?php
-            session_start();
-
-            $_SESSION['prenom'] = 'Ami';
-            $_SESSION['nom'] = 'Kaouet';
-            $_SESSION['age'] = '41';
-
-            ?>
             <a class="mr-3" href="infos.php">Cliquez pour afficher les variables de sessions !</a>
         </div>
     </div>
